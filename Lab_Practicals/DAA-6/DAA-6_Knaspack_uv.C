@@ -1,6 +1,5 @@
 //DAA_pr-6_uv
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 #include<time.h>
 
@@ -57,7 +56,7 @@ int Knaspack(int num_item,float capacity,float Weight[],float Value[],float knsp
 	}
 	return knsp_value;
 }
-void main(){
+int main(){
 	int i;
 	float Weight[20];
 	float Value[20];
@@ -65,7 +64,6 @@ void main(){
 	float knsp_rank[20];
 	float Capacity_of_weight,knsp_value;
 	int num_item;
-	clrscr();
 	printf("Code by utsav vachhani(UV).\n");
 	printf("This code is \n Fractional Knapsack Problem using Greedy technoque.");
 
@@ -118,5 +116,5 @@ void main(){
 	printf("\n\nAfte use of Knspack ALgorithm.");
 	Print_data(num_item,Weight,Value,Ratio,knsp_rank);
 	printf("\nValue is %f",knsp_value);
-	getch();
+	return 0;
 }

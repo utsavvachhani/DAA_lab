@@ -53,7 +53,6 @@ int main(){
     int i,j;
     FILE *rd;
     clock_t starttime,endtime;
-    clrscr();
     printf("Code by utsav vachhani(uv).");
     printf("\nThis is code of Heap Sort.");
     printf("\nHow many data in your Problem(MAX SIZE IS 15000) :");
@@ -65,7 +64,7 @@ int main(){
 
     j=1;
     //printf("Data are :\n");
-    rd=fopen("C:\\TURBOC3\\BIN\\project\\heap_input.txt","w");
+    rd=fopen("heap_input.txt","w");
     for(i=1;i<=number_data;i++){
 	fprintf(rd,"%d\t",data[i]);
       //  printf("%d\t",data[i]);
@@ -82,7 +81,7 @@ int main(){
     heapsort_fun(data,number_data);
     endtime=clock();
     j=1;
-    rd=fopen("C:\\TURBOC3\\BIN\\project\\heap_output.txt","w");
+    rd=fopen("heap_output.txt","w");
     for(i=1;i<=number_data;i++){
         fprintf(rd,"%d\t",data[i]);
         if((i)%10==0){
@@ -91,6 +90,6 @@ int main(){
         }
     }
     printf("\nSorted Data are write successfuly in heap_output.txt");
-    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLK_TCK);
+    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLOCKS_PER_SEC);
     return 0;
 }

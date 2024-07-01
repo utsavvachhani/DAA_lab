@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-#include<conio.h>
 int binarysearch(int arr[],int left,int right,int find){
 	int mid;
 	if(left<=right){
@@ -39,16 +38,15 @@ void bubbleSort(int arr[],int n){
 		}
 	}
 }
-void main(){
-	FILE *fp=fopen("C:\\TURBOC3\\BIN\\project\\data.txt","r");
+int main(){
+	FILE *fp=fopen("data.txt","r");
 	int ch,j,x=0;
 	clock_t starttime,endtime;
 	int arr[5000];
 	int i=0,n,find;
-	FILE *uv=fopen("C:\\TURBOC3\\BIN\\project\\bininput.txt","w");
-	FILE *wr=fopen("C:\\TURBOC3\\BIN\\project\\binoutput.txt","w");
+	FILE *uv=fopen("bininput.txt","w");
+	FILE *wr=fopen("binoutput.txt","w");
 
-	clrscr();
 	printf("code bu utsav vachhani(uv)");
 	printf("\nthis code is the binary search using taken value from user by '.txt' file ,");
 	printf("\nYour data size is maximum 5000");
@@ -108,7 +106,7 @@ void main(){
 	endtime=clock();
 
 
-	printf("\n\ntime=%f",(endtime-starttime)/CLK_TCK);
+	printf("\n\ntime=%f",(endtime-starttime)/CLOCKS_PER_SEC);
 
 	}
 	else{
@@ -117,6 +115,5 @@ void main(){
 	fclose(wr);
 	fclose(uv);
 	fclose(fp);
-	getch();
-
+	return 0;
 }

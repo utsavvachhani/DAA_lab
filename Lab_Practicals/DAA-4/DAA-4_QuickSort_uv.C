@@ -2,7 +2,6 @@
 #include<stdlib.h>
 #include<time.h>
 #include<stdio.h>
-#include<conio.h>
 int part(int arr[],int low,int high)
 {
 	int temp,j,i;
@@ -32,16 +31,15 @@ void condition(int arr[],int low,int high){
 	condition(arr,pv+1,high);
 	}
 }
-void main(){
-	FILE *fp=fopen("C:\\TURBOC3\\BIN\\project\\data.txt","r");
+int main(){
+	FILE *fp=fopen("data.txt","r");
 	int ch,j,x=0;
 	clock_t starttime,endtime;
 	int arr[15000];
 	int i=0,n;
-	FILE *uv=fopen("C:\\TURBOC3\\BIN\\project\\quiinput.txt","w");
-	FILE *wr=fopen("C:\\TURBOC3\\BIN\\project\\quioutput.txt","w");
+	FILE *uv=fopen("quiinput.txt","w");
+	FILE *wr=fopen("quioutput.txt","w");
 
-	clrscr();
 	printf("code bu utsav vachhani(uv)");
 	printf("\nthis code is the Quick sorting using taken value from user by '.txt' file ,");
 	printf("\nYour data size is maximum 15000");
@@ -96,13 +94,12 @@ void main(){
 	}
 	printf("\nOutput means sorting data store in quioutput.txt");
 	printf("\nNote : last colum of input/output show the index of row.");
-	printf("\n\ntime=%f",(endtime-starttime)/CLK_TCK);         }
+	printf("\n\ntime=%f",(endtime-starttime)/CLOCKS_PER_SEC);         }
 	else{
 		printf("\n\nooooppppppssss!!!!!\nYour data is higher then 15000");
 	}
 	fclose(wr);
 	fclose(uv);
 	fclose(fp);
-	getch();
-
+	return 0;
 }

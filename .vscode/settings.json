@@ -5,6 +5,14 @@
         "DAA-2_InesertionSort_uv.C": "cpp",
         "DAA-2_SelectionSort_uv.C": "cpp",
         "DAA-3_CountingSort_uv.C": "cpp",
-        "DAA-3_RadixSort_uc.C": "cpp"
+        "DAA-3_RadixSort_uc.C": "cpp",
+        "MAKING.C": "cpp",
+        "DAA-4_MergeSort_uv.C": "cpp",
+        "DAA-4_QuickSort_uv.C": "cpp",
+        "DAA-5_HeapSort_uv.C": "cpp",
+        "DAA-6_Knaspack_uv.C": "cpp",
+        "DAA-7_BinarySearch_uv.C": "cpp",
+        "DAA-7_LinarySearch_uv.C": "cpp",
+        "DAA-8_DyanamicProgrammming_UV.C": "cpp"
     }
 }

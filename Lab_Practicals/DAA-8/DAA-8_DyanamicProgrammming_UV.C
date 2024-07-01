@@ -2,7 +2,6 @@
 #include<stdio.h>
 #include<stdlib.h>
 #include<time.h>
-#include<conio.h>
 int c[150][150];
 int Dynamic_programming(int d[],int n,int N){
 	int i,j,x;
@@ -38,9 +37,9 @@ int main(){
 	int i,j;
 	int ch,x=0;
 	clock_t starttime,endtime;
-	FILE *wr=fopen("C:\\TURBOC3\\BIN\\project\\Output_m.txt","w");
-	FILE *fp=fopen("C:\\TURBOC3\\BIN\\project\\arrayD.txt","r");
-	clrscr();
+	FILE *wr=fopen("Output_m.txt","w");
+	FILE *fp=fopen("arrayD.txt","r");
+
 	printf("Code by utsav vachhani(uv).");
 	printf("\nThis is code of Dyanmic Programming ");
 	printf("\n\"Data size of all operter in maxium 165.\"\n ");
