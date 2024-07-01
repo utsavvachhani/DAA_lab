@@ -1,5 +1,10 @@
 {
     "files.associations": {
-        "DAA-1_Factorial_uv.C": "cpp"
+        "DAA-1_Factorial_uv.C": "cpp",
+        "DAA-2_bubbleSort_uv.C": "cpp",
+        "DAA-2_InesertionSort_uv.C": "cpp",
+        "DAA-2_SelectionSort_uv.C": "cpp",
+        "DAA-3_CountingSort_uv.C": "cpp",
+        "DAA-3_RadixSort_uc.C": "cpp"
     }
 }

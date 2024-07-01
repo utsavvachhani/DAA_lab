@@ -1,0 +1,16 @@
+PS C:\TURBOC3\BIN\project> cd "c:\TURBOC3\BIN\project\" ; if ($?) { gcc KNSAP_0_1_dynamic_progarming.C -o KNSAP_0_1_dynamic_progarming } ; if ($?) { .\KNSAP_0_1_dynamic_progarming }
+Code by utsav vachhani(uv)
+Code of 0/1 Knapsack Problem using Dynamic Programming
+Max size of all data are 165
+What is the Capcity Of Weight : 160
+Enter the value of n :150
+
+Values are copy Sucessful from knasp_input.txt 
+Array of v[][] is 
+
+
+Output array v[][] is write successfully in knasp_output.txt
+
+knasp_Value is 638
+
+Time=0.000000 //where taken time is vary less.
