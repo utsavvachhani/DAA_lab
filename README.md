@@ -9,7 +9,7 @@ https://drive.google.com/drive/folders/1fLQLzMvP2FUAHvfoXAcz9Xh_x71YNerq?usp=sha
 
 
 
-Here are some links to additional resources:
+- Here are some links to additional resources:
 
 Change-Matrix_uv : 
 https://github.com/utsavvachhani/Change-Matrix_uv
