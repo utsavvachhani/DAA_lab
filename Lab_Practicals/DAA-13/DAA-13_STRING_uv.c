@@ -2,7 +2,6 @@
 #include <stdio.h>
 #include <string.h>
 #include<stdlib.h>
-#include<conio.h>
 #include<time.h>
 #define d 10
 
@@ -64,7 +63,7 @@ int main(){
         printf("Data size is highr then 15000.");
         return 0;
     }
-    fp=fopen("C:\\TURBOC3\\BIN\\project\\Practical-3_uv\\13_pattern.txt","r");
+    fp=fopen("13_pattern.txt","r");
     for(i=0;i<m;i++){
         ch=getc(fp);
         pattern[i]=ch;
@@ -74,7 +73,7 @@ int main(){
         printf("%c",pattern[i]);
     }
 
-    fp=fopen("C:\\TURBOC3\\BIN\\project\\Practical-3_uv\\13_text.txt","r");
+    fp=fopen("13_text.txt","r");
     for(i=0;i<n;i++){
         ch=getc(fp);
         text[i]=ch;
@@ -89,6 +88,6 @@ int main(){
     if(i==0){
         printf("\nNo match String is find.");
     }
-    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLK_TCK);
+    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLOCKS_PER_SEC);
     return 0;
 }

@@ -1,6 +1,5 @@
 //Practical-9 Implementation and Time analysis of 0/1 Knapsack Problem using Dynamic Programming.
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 #include<time.h>
 int v[165][165];
@@ -35,8 +34,8 @@ int main(){
     int Vi[165],Wi[165];
     int x,ch;
     clock_t starttime,endtime;
-	FILE *wr=fopen("C:\\TURBOC3\\BIN\\project\\knasp_output.txt","w");
-	FILE *fp=fopen("C:\\TURBOC3\\BIN\\project\\knasp_input.txt","r");
+	FILE *wr=fopen("knasp_output.txt","w");
+	FILE *fp=fopen("knasp_input.txt","r");
    //clrscr();
     printf("Code by utsav vachhani(uv)");
     printf("\nCode of 0/1 Knapsack Problem using Dynamic Programming");
@@ -101,7 +100,7 @@ int main(){
     printf("\n\nOutput array v[][] is write successfully in knasp_output.txt ");
     printf("\n\nknasp_Value is %d",knsap_value);
 
-    printf("\n\nTime=%f\n",(endtime-starttime)/CLK_TCK);
+    printf("\n\nTime=%f\n",(endtime-starttime)/CLOCKS_PER_SEC);
     fclose(fp);
     fclose(wr);
     return 0;

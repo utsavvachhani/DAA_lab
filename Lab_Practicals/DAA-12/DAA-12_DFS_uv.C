@@ -1,6 +1,5 @@
 //making of graph
 #include<stdlib.h>
-#include<conio.h>
 #include<stdio.h>
 #include<time.h>
 int visited[150];
@@ -20,15 +19,15 @@ void DFS(int i,int Node,int a[165][165]){
 		}
 	}
 
-void main(){
+int main(){
 	int a[165][165];
 	int i,j,n=150,Node;
 	int ch,x;
 	clock_t starttime,endtime;
-	FILE *rd=fopen("C:\\TURBOC3\\BIN\\project\\graph.txt","r");
-	FILE *wr=fopen("C:\\TURBOC3\\BIN\\project\\graphinput.txt","w");
-	FILE *ou=fopen("C:\\TURBOC3\\BIN\\project\\DFS.txt","w");
-	clrscr();
+	FILE *rd=fopen("graph.txt","r");
+	FILE *wr=fopen("graphinput.txt","w");
+	FILE *ou=fopen("DFS.txt","w");
+
 	printf("Code bu utsav vachhani(uv)");
 	printf("\nthis is Program of Death First Search(DFS) using Dynamially taken Value from txt file.");
 	printf("\nHow many node in your Graph (Max size of node is 150):");
@@ -89,12 +88,12 @@ void main(){
 		}
 	}
 	printf("\n\nYour Output of data store in DFS_uv.txt");
-	printf("\ntime=%f",(endtime-starttime)/CLK_TCK);	}
+	printf("\ntime=%f",(endtime-starttime)/CLOCKS_PER_SEC);	}
 	else{
 		printf("Your Entering data is Larger then Given number of Node.");
 	}
 	fclose(ou);
 	fclose(wr);
 	fclose(rd);
-	getch();
+	return 0;
 }

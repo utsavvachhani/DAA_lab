@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<stdlib.h>
 struct queue
 {
@@ -69,7 +68,6 @@ int  a[7][7]={
 	    {0,0,0,0,1,0,0},
 	    {0,0,0,0,1,0,0}
 	  };
-	clrscr();
 	printf("Code by utsav vachhani(UV)");
 	printf("\nBFS is \n");
 q.size=400;

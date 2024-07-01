@@ -1,5 +1,4 @@
 #include<stdio.h>
-#include<conio.h>
 #include<math.h>
 int a[30];
 int count=0;
@@ -48,7 +47,6 @@ void queen(int n) {
 
 int main() {
     int i,n;
-    clrscr();
     printf("Enter the number of Queens\n");
     scanf("%d",&n);
     queen(n);

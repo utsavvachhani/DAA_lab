@@ -13,6 +13,10 @@
         "DAA-6_Knaspack_uv.C": "cpp",
         "DAA-7_BinarySearch_uv.C": "cpp",
         "DAA-7_LinarySearch_uv.C": "cpp",
-        "DAA-8_DyanamicProgrammming_UV.C": "cpp"
+        "DAA-8_DyanamicProgrammming_UV.C": "cpp",
+        "KNSAP_0_1_dynamic_progarming.C": "cpp",
+        "DAA-12_BFS_uv.C": "cpp",
+        "DAA-12_DFS_uv.C": "cpp",
+        "DAA-14_N-Queen_uv.c.C": "cpp"
     }
 }

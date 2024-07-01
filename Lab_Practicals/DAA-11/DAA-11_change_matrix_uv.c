@@ -38,7 +38,7 @@ int main(){
         printf("Data size is higher then 165.");
         return 0;
     }
-    fp=fopen("12_data.txt","r");
+    fp=fopen("11_data.txt","r");
     i=0,x=0;
     ch=getc(fp);
     while(ch!=EOF){
@@ -67,7 +67,7 @@ int main(){
     MATRIX_CHAIN_TABLE(p,n);
     endtime=clock();
     
-    fp=fopen("12_output.txt","w");
+    fp=fopen("11_output.txt","w");
     printf("\n\n");
     for(i=1;i<=n;i++){
         for(j=1;j<=n;j++){
@@ -77,6 +77,6 @@ int main(){
         fprintf(fp,"\n");
         printf("\n");
     }
-    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLK_TCK);
+    printf("\n\n-------------------------\n|\tTime=%f\t|\n-------------------------",(endtime-starttime)/CLOCKS_PER_SEC);
     return 0;
 }
